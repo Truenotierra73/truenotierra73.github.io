@@ -1,0 +1,135 @@
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+
+    width: 100%;
+    max-width: 61rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (width > 768px) {
+    #about-me {
+        display: grid;
+        gap: 2rem;
+    }
+
+    #about-me > article {
+        grid-column: 1;
+        grid-row: 1;
+        width: 40rem;
+    }
+
+    #about-me > aside {
+        grid-column: 2;
+        grid-row: 1;
+    }
+}
+
+@media screen and (width <= 768px) {
+    #about-me h2 {
+        text-align: center;
+    }
+}
+
+.header-experience {
+    display: flex;
+}
+
+@media screen and (width <= 425px) {
+    div > img {
+        width: 100px;
+    }
+}
+
+header.title {
+    margin-bottom: 2rem;
+}
+
+.title-porfolio {
+    text-shadow: #c2c2c2 0.125rem 0.125rem 0.125rem;
+}
+
+svg {
+    width: 2.5rem;
+    height: auto;
+}
+
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.fav-techs {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.fav-techs {
+    padding: 0;
+    list-style: none;
+}
+
+.img-about-me {
+    width: 35%;
+    aspect-ratio: 514 / 517;
+    border-radius: 50%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    min-height: 5rem;
+}
+
+footer ul {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+footer ul a svg {
+    width: 1.5rem;
+    height: auto;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
+}
